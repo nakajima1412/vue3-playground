@@ -1,0 +1,28 @@
+{
+  "name": "front",
+  "dockerComposeFile": [
+    "../docker-compose.yml",
+    "docker-compose.dev.yml"
+  ],
+  "service": "frontend",
+  "workspaceFolder": "/app",
+  "extensions": [
+    // git
+    "mhutchie.git-graph",
+    "eamodio.gitlens",
+    // editor
+    "mosapride.zenkaku",
+    "oderwat.indent-rainbow",
+    // js
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "vue.volar",
+    "vue.vscode-typescript-vue-plugin"
+  ],
+  "settings": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "terminal.integrated.defaultProfile.linux": "bash",
+  }
+}

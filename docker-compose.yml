@@ -7,6 +7,9 @@ services:
     container_name: front
     working_dir: /app
     volumes:
-      - .:/app
+      - ./:/app:cached
+      - front_node_modules:/app/node_modules
     ports:
       - "8000:8000"
+volumes:
+  front_node_modules:
